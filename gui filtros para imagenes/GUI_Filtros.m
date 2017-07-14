@@ -83,7 +83,7 @@ function Cargar_Callback(hObject, eventdata, handles)
 % hObject    handle to Cargar (see GCBO)
 % eventdata  reserved - to be defined in a future version of MATLAB
 % handles    structure with handles and user data (see GUIDATA)
-[filename pathname] = uigetfile({'*.jpg','*.png'},'File Selector'); % Buscar imagen de forma gráfica
+[filename pathname] = uigetfile('*.jpg','File Selector'); % Buscar imagen de forma gráfica
 fullpathname1 = strcat(pathname, filename);  % Obtener direccion
 handles.filename1 = filename;
 
@@ -738,7 +738,7 @@ function Abrir_ClickedCallback(hObject, eventdata, handles)
 % hObject    handle to Abrir (see GCBO)
 % eventdata  reserved - to be defined in a future version of MATLAB
 % handles    structure with handles and user data (see GUIDATA)
-[filename pathname] = uigetfile({'*.jpg','*.png'},'File Selector'); % Buscar imagen de forma gráfica
+[filename pathname] = uigetfile('*.jpg','File Selector'); % Buscar imagen de forma gráfica
 fullpathname1 = strcat(pathname, filename);  % Obtener direccion
 handles.filename1 = filename;
 
